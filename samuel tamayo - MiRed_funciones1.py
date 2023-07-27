@@ -12,22 +12,34 @@
 #del perfil del usuario, habrás notado que tienes que escribir de nuevo el código necesario
 #con un print por cada dato. El código se verí­a como está más abajo.
 
+def saludo(vijuego):
+    print(f"mi video juego favorito se llama {vijuego} ")
 
-print("Bienvenido a ... ")
-print("""
-              _                  __
-   ____ ___  (_)  ________  ____/ /
-  / __ `__ \/ /  / ___/ _ \/ __  /
- / / / / / / /  / /  /  __/ /_/ /
-/_/ /_/ /_/_/  /_/   \___/\__,_/
+    
 
-""")
+
+
+print("bienvenido a....")
+print('''
+  ######    ##   ##  ######    ##  ##   ######   ##       #####
+##      ##  ##   ##  ##   ##   ##  ##   ##       ##       ##  ##
+##      ##  ##   ##  ##   ##   ##  ##   ##       ##       ##  ##
+##      ##  ##   ##  ##   ##   ######   ####     ##       #####
+##      ##  ##   ##  #####     ##  ##   ##       ##       ##
+##      ##  ##   ##  ##  ##    ##  ##   ##       ##       ##
+  ######    #######  ##  ##    ##  ##   ######   ######   ##
+''')
 
 # Solicitud de nombre
 nombre = input("Para empezar, dime como te llamas. ")
 print()
 print("Hola ", nombre, ", bienvenido a Mi Red")
 print()
+
+#solicitus de funcion
+vijuego= input ("ingresa el no,mbre de tu juego favorito:")
+
+saludo ()
 
 # Cálculo de edad
 agno = int(input("Para preparar tu perfil, dime en qué año naciste. "))
@@ -41,6 +53,9 @@ estatura_cm = int( (estatura - estatura_m)*100 )
 
 # Cantidad de amigos
 num_amigos = int(input("Muy bien. Finalmente, cuéntame cuantos amigos tienes. "))
+
+
+                                                                                                                                                                                                                                                                                                                                                                                          >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>| |   |   |   |   |   °>                                                                                                                  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 #Con los datos recolectados escribimos en pantalla un texto que resuma los datos que hemos obtenido
 print()
