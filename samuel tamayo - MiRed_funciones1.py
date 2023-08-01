@@ -12,9 +12,17 @@
 #del perfil del usuario, habrás notado que tienes que escribir de nuevo el código necesario
 #con un print por cada dato. El código se verí­a como está más abajo.
 
-def saludo(vijuego):
+def diHola(nombre):     #funcion numero 1
+  print("¿como estas!?")
+
+  
+
+def saludo(vijuego):    #funcion numero 2
     print(f"mi video juego favorito se llama {vijuego} ")
 
+
+def gustanombre (apodo)     #funcion numero 3
+    print ("gracias por confiar en nosostros :)", apodo)
     
 
 
@@ -35,11 +43,14 @@ nombre = input("Para empezar, dime como te llamas. ")
 print()
 print("Hola ", nombre, ", bienvenido a Mi Red")
 print()
-
-#solicitus de funcion
+diHola ("")    #primer llamado de la funcion
+#segundo llamado de funcion 
 vijuego= input ("ingresa el no,mbre de tu juego favorito:")
 
 saludo ()
+
+apodo = input("es muy importante para nosotros conectarnos con usted. por ende le pediremos en favor de que escriba aqui como le gusta que lo llamen: ")
+print()
 
 # Cálculo de edad
 agno = int(input("Para preparar tu perfil, dime en qué año naciste. "))
@@ -63,7 +74,7 @@ print("Muy bien,", nombre, ". Entonces podemos crear un perfil con estos datos."
 print("--------------------------------------------------")
 print("Nombre:  ", nombre)
 print("Edad:    ", edad, "años")
-print("Estatura:", estatura_m, "metros y", estatura_cm, "centí­metros")
+print("Estatura:", estatura_m, "metros y", estatura_cm, "centi­metros")
 print("Amigos:  ", num_amigos)
 print("--------------------------------------------------")
 print("Gracias por la información. Esperamos que disfrutes con Mi Red")
@@ -151,6 +162,7 @@ while opcion != 0:
 print()
 print("Gracias por usar Mi Red. ¡Hasta pronto!")
 print()
+gustanombre ()
 
 #Si pruebas este código, verás que funciona correctamente, pero nuestro programa ahora es bastante largo.
 #Casi 140 lí­neas.
