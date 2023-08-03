@@ -22,7 +22,13 @@ def saludo(vijuego):    #funcion numero 2
 
 
 def gustanombre (apodo)     #funcion numero 3
-    print ("gracias por confiar en nosostros :)", apodo)
+    print ("gracias por confiar en nosostros:)", apodo)
+
+def gen ( genero):
+    print("su genero es:", genero)
+    
+def pais (paisnacimiento):
+        print("su pais de nacimiento es:", paisnacimiento)
     
 
 
@@ -43,6 +49,8 @@ nombre = input("Para empezar, dime como te llamas. ")
 print()
 print("Hola ", nombre, ", bienvenido a Mi Red")
 print()
+genero = input("por favor ingresa M si eres hombre, F si eres mujer o N si no te siente identificado con ser hombre o mujer")
+print ()
 diHola ("")    #primer llamado de la funcion
 #segundo llamado de funcion 
 vijuego= input ("ingresa el no,mbre de tu juego favorito:")
@@ -53,6 +61,8 @@ apodo = input("es muy importante para nosotros conectarnos con usted. por ende l
 print()
 
 # Cálculo de edad
+paisnacimiento= input(nombre, " ingrese ingrese el pais en el cual ha nacido:")
+print
 agno = int(input("Para preparar tu perfil, dime en qué año naciste. "))
 edad = 2017-agno-1
 print()
@@ -73,7 +83,10 @@ print()
 print("Muy bien,", nombre, ". Entonces podemos crear un perfil con estos datos.")
 print("--------------------------------------------------")
 print("Nombre:  ", nombre)
+gen ()
 print("Edad:    ", edad, "años")
+pais ()
+
 print("Estatura:", estatura_m, "metros y", estatura_cm, "centi­metros")
 print("Amigos:  ", num_amigos)
 print("--------------------------------------------------")
