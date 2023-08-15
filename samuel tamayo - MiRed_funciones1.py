@@ -1,16 +1,6 @@
-#Hola.
-#En esta ocasión vamos a continuar con el código de nuestra red social,
-#al cual le habí­amos agregado un menú.
-#
-#El programa de la semana anterior permití­a:
-#1. Obtener datos del usuario
-#2. Consultar y mostrar varios mensajes de estado del usuario
-#3. Escoger entre distintas acciones que el usuario puede realizar
-#
+# red social de samuel tamayo y carolina paternina :)
+#somos los mejores, tenemos unas ideas geniales y aun mas importante. todo que lo se ve en esta red esta hecho por parte de nosotros sin ningun plagio. :)
 
-#Si lograste agregar una opción nueva al sistema, por ejemplo, para escribir los datos
-#del perfil del usuario, habrás notado que tienes que escribir de nuevo el código necesario
-#con un print por cada dato. El código se verí­a como está más abajo.
 
 def diHola(nombre):     #funcion numero 1
   print("¿como estas!?")
@@ -47,7 +37,7 @@ print('''
 # Solicitud de nombre
 nombre = input("Para empezar, dime como te llamas. ")
 print()
-print("Hola ", nombre, ", bienvenido a Mi Red")
+print("Hola ", nombre, ", bienvenido a ourhelp")
 print()
 genero = input("por favor ingresa M si eres hombre, F si eres mujer o N si no te siente identificado con ser hombre o mujer")
 print ()
@@ -63,12 +53,12 @@ print()
 # Cálculo de edad
 paisnacimiento= input(nombre, " ingrese ingrese el pais en el cual ha nacido:")
 print
-agno = int(input("Para preparar tu perfil, dime en qué año naciste. "))
-edad = 2017-agno-1
+agneo = int(input("Para preparar tu perfil, dime en qué año naciste. "))
+edad = 2017-agneo-1
 print()
 
 # Cálculo de estatura
-estatura = float(input("Cuéntame más de ti, para agregarlo a tu perfil. ¿Cuánto mides? Dí­melo en metros. "))
+estatura = float(input("Cuéntame más de ti, para agregarlo a tu perfil. ¿Cuánto mides? Di­melo en metros. "))
 estatura_m = int(estatura)
 estatura_cm = int( (estatura - estatura_m)*100 )
 
@@ -90,14 +80,15 @@ pais ()
 print("Estatura:", estatura_m, "metros y", estatura_cm, "centi­metros")
 print("Amigos:  ", num_amigos)
 print("--------------------------------------------------")
-print("Gracias por la información. Esperamos que disfrutes con Mi Red")
+print("Gracias por la información. Esperamos que disfrutes con ourhelp tu red social aliada")
 print()
 
 #Esta opcion permite entrar al ciclo. Solo interesa que no sea 0.
 opcion = 1
 while opcion != 0:
     print("Acciones disponibles:")
-    print("  1. Escribir un mensaje público")
+    print("  1. Escribir un mensaje al publico en general
+    ")
     print("  2. Escribir un mensaje solo a algunos amigos")
     print("  3. Mostrar los datos de perfil")
     print("  4. Actualizar el perfil de usuario")
@@ -175,20 +166,6 @@ while opcion != 0:
 print()
 print("Gracias por usar Mi Red. ¡Hasta pronto!")
 print()
+#Llamado de la funcion para el apodo
 gustanombre ()
 
-#Si pruebas este código, verás que funciona correctamente, pero nuestro programa ahora es bastante largo.
-#Casi 140 lí­neas.
-#Esto en sí­ no es malo. Sin embargo, si le pones atención, verás que hay código que hemos tenido
-#que repetir completamente. Por ejemplo, el código para mostrar el perfil de un usuario está escrito tres veces.
-#Si ahora queremos agregar un nuevo dato del usuario, por ejemplo, el paí­s en que vive, debemos modificar
-#al menos tres partes distintas del programa.
-#Esto lo podemos hacer, talvez sin cometer errores, en un programa pequeño como éste.
-#Pero en programas más grandes, es muy fácil que nos olvidemos de actualizar una parte del código,
-#o que no recordemos todas las partes que hay que modificar.
-
-#Cuando tenemos instrucciones que se repiten tantas veces en distintas partes del programa,
-# es una indicación de que talvez necesitamos agregar funciones.
-
-#Te invitamos a pensar en al menos 3 alternativas o funcionalidades de este código
-#que podrí­an convertirse en una función.
